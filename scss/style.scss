@@ -1,0 +1,134 @@
+@import "_null";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 62.5%;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	color: #000000;
+}
+body._lock {
+	overflow: hidden;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	font-size: 1.8rem;
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: 102rem;
+	margin: 0 auto;
+	padding: 0rem 1.5rem;
+}
+
+.header {
+	&__container {
+		max-width: 102rem;
+		display: flex;
+		flex-direction: row;
+		background-color: #004a49;
+		& span {
+			margin-left: 2rem;
+			font-size: 2rem;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	&__logo {
+		height: 10rem;
+		width: 10rem;
+	}
+	&__logo img {
+		height: 10rem;
+		width: 10rem;
+	}
+}
+
+.gallery {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__container {
+		padding-top: 5rem;
+		width: 102rem;
+		background-color: #d0e6f4;
+	}
+
+	&__block {
+	}
+
+	&__block-row {
+		display: flex;
+		flex-direction: row;
+	}
+}
+.gallery-item {
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 2rem 6rem;
+	}
+
+	&__img {
+		margin-bottom: 2rem;
+	}
+
+	&__text {
+		max-width: 20rem;
+	}
+}
+
+.categories {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	&__container {
+		padding: 2rem 0rem 2rem 0rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: space-between;
+		max-width: 102rem;
+		background-color: #d0e6f4;
+	}
+
+	&__block {
+		display: flex;
+		width: 102rem;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2rem 5rem;
+		border: 1px solid #000;
+		border-radius: 25px;
+	}
+
+	&__name {
+	}
+}
+
+/* PC + LAPTOP*/
+@media (max-width: 1087px) {
+}
+/* TABLET */
+@media (max-width: 991.98px) {
+}
+/* MOBILE */
+@media (max-width: 767.98px) {
+}

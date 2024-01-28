@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  font-size: 1.8rem;
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 102rem;
+  margin: 0 auto;
+  padding: 0rem 1.5rem;
+}
+
+.header__container {
+  max-width: 102rem;
+  display: flex;
+  flex-direction: row;
+  background-color: #004a49;
+}
+.header__container span {
+  margin-left: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  height: 10rem;
+  width: 10rem;
+}
+.header__logo img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery__container {
+  padding-top: 5rem;
+  width: 102rem;
+  background-color: #d0e6f4;
+}
+.gallery__block-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery-item__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 6rem;
+}
+.gallery-item__img {
+  margin-bottom: 2rem;
+}
+.gallery-item__text {
+  max-width: 20rem;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.categories__container {
+  padding: 2rem 0rem 2rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  max-width: 102rem;
+  background-color: #d0e6f4;
+}
+.categories__block {
+  display: flex;
+  width: 102rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  border: 1px solid #000;
+  border-radius: 25px;
+}
+/* PC + LAPTOP*/
+/* TABLET */
+/* MOBILE */
